@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>CORS Demo</title>
+</head>
+
+<body>
+
+<h1>CORS Testing</h1>
+
+<button onclick="getData()">
+Get Backend Data
+</button>
+
+<p id="result"></p>
+
+
+<script>
+
+async function getData(){
+
+    const response = await fetch(
+        "http://127.0.0.1:8000/"
+    );
+
+    const data = await response.json();
+
+
+    document.getElementById("result").innerText =
+    data.message;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
