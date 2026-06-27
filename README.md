@@ -18,12 +18,19 @@ This project demonstrates how Cross-Origin Resource Sharing (CORS) works using F
 ```text
 secure-cross-origin/
 │
-├── backend_no_cors.py
-├── backend_with_cors.py
+├── backend_no_cors.py          # Backend without CORS
+├── backend_with_cors.py        # Backend with CORS Middleware
+├── requirements.txt            # Project dependencies
+├── .gitignore                  # Ignore unnecessary files
+├── README.md                   # Project documentation
+│
 ├── frontend/
-│   └── index.html
-├── requirements.txt
-└── README.md
+│   └── index.html              # Frontend application
+│
+└── screenshots/
+    ├── backend-running.png     # FastAPI server running
+    ├── cors-error.png          # Browser blocked by CORS
+    └── cors-success.png        # Successful cross-origin request
 ```
 
 ## Installation
@@ -76,6 +83,19 @@ http://127.0.0.1:8080
   "message": "Hello from Backend with CORS"
 }
 ```
+## Screenshots
+
+### Backend Running
+
+![Backend Running](screenshots/backend-running.png)
+
+### CORS Error (Without CORS)
+
+![CORS Error](screenshots/cors-error.png)
+
+### Successful Cross-Origin Communication
+
+![CORS Success](screenshots/cors-success.png)
 
 ## Learning Outcomes
 
